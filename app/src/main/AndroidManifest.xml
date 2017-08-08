@@ -20,6 +20,8 @@
         <!-- TileService for "Update the Tile UI" section -->
         <service
             android:name=".QuickSettingTileService"
+            android:enabled="true"
+            android:exported="true"
             android:icon="@drawable/ic_android_black_24dp"
             android:label="@string/tile_label"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
