@@ -16,25 +16,21 @@ import static android.support.v4.app.ActivityCompat.startActivity;
 /**
  * Created by Josh Gold starting on 8/6/2017.
  */
-class QuickSettingTileService extends TileService {
+public class QuickSettingTileService extends Service {
 
     public QuickSettingTileService()
     {
     }
 
     @Nullable
-    @Override
+    //@Override
     public IBinder onBind(Intent intent) {
         return null;
     }
 
-    protected Context context;
-    MainActivity objMainActivity = new MainActivity(context);
-
     //@Override
     public void onClick()
     {
-        Toast.makeText(context, "Quick Setting Clicked", Toast.LENGTH_SHORT).show();
-        //Toggle code is here
+      //do some stuff, like to the home screen
     }
 }

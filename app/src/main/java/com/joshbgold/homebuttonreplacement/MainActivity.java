@@ -10,18 +10,21 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 
+    public Context context;
+
     //required default constructor
     public MainActivity(){
     }
 
-    public MainActivity(Context context) {
+/*    public MainActivity(Context context) {
         context = getApplicationContext();
-    }
+    }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //context = this;
 
         final Button homeButton = (Button) findViewById(R.id.homeButton);
 
